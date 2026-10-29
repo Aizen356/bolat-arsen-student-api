@@ -1,0 +1,19 @@
+# Gradle
+.gradle/
+build/
+bin/
+out/
+!gradle/wrapper/gradle-wrapper.jar
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# Environment / secrets (never commit credentials)
+.env
+*.env
+
+# OS
+.DS_Store
+Thumbs.db
