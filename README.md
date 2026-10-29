@@ -1,6 +1,6 @@
 # bolat-arsen-student-api
 
-Spring Boot CRUD application for managing student records.
+Spring Boot CRUD API for student records. (documentation branch - Bolat Arsen)
 
 **Author:** Bolat Arsen
 
