@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -33,6 +34,11 @@ public class StudentController {
     @GetMapping
     public List<Student> getAll() {
         return repository.findAll();
+    }
+
+    @GetMapping("/search")
+    public List<Student> search(@RequestParam("name") String name) {
+        return repository.findByNameContainingIgnoreCase(name);
     }
 
     @GetMapping("/{id}")
